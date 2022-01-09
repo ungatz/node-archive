@@ -1,0 +1,14 @@
+{
+  "name": "timestamp-microservice",
+  "version": "1.0.0",
+  "description": "a timestamping microservice with one API endpoint.",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "Sanad Kadu",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}

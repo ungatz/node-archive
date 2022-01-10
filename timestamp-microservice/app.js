@@ -6,7 +6,6 @@ const bodyParser = require('body-parser');
 const app = express();
 const {URL, checkURL, genShort, formatURL} = require('./models/url.js');
 
-// Basic Configuration
 const port = process.env.PORT || 3000;
 
 // Connect DB

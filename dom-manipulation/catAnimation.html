@@ -1,0 +1,30 @@
+<doctype! html>
+    <body>
+        <style>body { min-height: 200px }</style>
+        <img src="http://eloquentjavascript.net/img/cat.png" id="cat" style="position: absolute">
+        <img src="http://eloquentjavascript.net/img/hat.png" id="hat" style="position: absolute">
+
+        <script>
+         let cat = document.querySelector("#cat");
+         let hat = document.querySelector("#hat");
+
+         let angleCat = 0;
+         let angleHat = Math.PI;
+         let lastTime = null;
+         function animate(time) {
+             if (lastTime != null){
+                 angleCat += (time - lastTime) * 0.001;
+                 angleHat += (time - lastTime) * 0.001;
+             }
+             lastTime = time;
+             cat.style.top = (Math.sin(angleCat) * 40 + 40) + "px";
+             cat.style.left = (Math.cos(angleCat) * 200 + 230) + "px";
+
+             hat.style.top = (Math.sin(angleHat) * 40 + 40) + "px";
+             hat.style.left = (Math.cos(angleHat) * 200 + 230) + "px";
+
+             requestAnimationFrame(animate);
+         }
+         requestAnimationFrame(animate);
+        </script>
+    </body>

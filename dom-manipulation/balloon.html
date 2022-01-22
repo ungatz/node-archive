@@ -1,0 +1,47 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+         p {
+             text-align: center;
+             line-height: 100px;
+         }
+        </style>
+    </head>
+    <body>
+        <p>🎈</p>
+
+        <script>
+            let ballon = document.querySelector("p");
+            let orignalSize = 15;
+            ballon.style.fontSize = orignalSize + "px";
+            let maxSize = 200;
+
+            function grow(){
+                orignalSize += 0.1 * orignalSize;
+                if(orignalSize > maxSize) {
+                    ballon.textContent = "💥";
+                    window.removeEventListener("keydown", driver);
+                }
+                ballon.style.fontSize = orignalSize + "px";
+            }
+            function shrink(){
+                orignalSize -= 0.1 * orignalSize;
+                ballon.style.fontSize = orignalSize + "px";
+            }
+            function driver(event){
+                if(event.key == "ArrowUp") {
+                    grow();
+                    event.preventDefault();
+                } else if(event.key == "ArrowDown") {
+                    shrink();
+                    event.preventDefault();
+                }
+            }
+            window.addEventListener("keydown", driver);
+        </script>
+
+    </body>
+</html>

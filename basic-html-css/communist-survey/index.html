@@ -1,0 +1,47 @@
+<html>
+  <head>
+  <title> Survey Form </title>
+  </head>
+  <body>
+    <div class="container">
+    <header class="header">
+    <h1 id="title" class="text-center">State Survey</h1>
+      <p id="description" class="description text-center"> Your labour is much appriciated comrade.</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+      <label for="name" id="name-label">Name:</label>
+      <input id="name" class="form-control" type="text" name="name" placeholder="Enter Name." required/>
+      </div>
+       <div class="form-group">
+      <label for="email" id="email-label">E-Mail:</label>
+      <input id="email" name="email" class="form-control" type="text" placeholder="Enter your Email ID." required/>
+        </div>
+       <div class="form-group">
+      <label for="number" id="number-label">Age:</label>
+      <input id="number" class="form-control" name="number" type="text" placeholder="Enter your age." required/>
+      </div>
+      <div class="form-group">
+      <label for="dropdown" id="dropdown-label"> Who do you serve?</label>
+      <select name="dropdown" id="dropdown" class="form-control" placeholder="select" required>
+        <option value="reproduction">State</option>
+        <option value="lust">State</option>
+        <option value="love">State</option>
+        <option value="idk">State</option>
+      </select>
+        </div>
+      <div class="form-group">
+      <p> This form too red for you ?</p>
+      <label><input name="checkbox" class="input-radio" value="yes" type="checkbox">Yes</input>
+      <label><input name="checkbox" class="input-radio" value="no" type="checkbox">No</input>
+      <label><input name="checkbox" class="input-radio" value="maybe" type="checkbox">Maybe</input>
+      </div>
+      <div class="form-group">
+        <p> Any comments or suggestions ? </p>
+        <textarea id="comments" class="input-textarea" name="comments" placeholder=" Enter comments ..."></textarea>
+        <button type="submit" id="submit" class="submit-button"> Submit </button>
+      </div>
+    </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "project-2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "sanad",
+  "license": "ISC",
+  "dependencies": {
+    "google-spreadsheet": "^3.0.13",
+    "twitter": "^1.7.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "debord"
+  },
+  "description": ""
+}
